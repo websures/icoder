@@ -1,1 +1,177 @@
+<!doctype html>
+<html lang="en">
 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <meta name="description" content="Welcome to iCoder. A blog for coding enthusiasts">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<style>
+  a{
+    text-decoration: none;
+  }
+  footer{
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
+    <title>iCoder - Heaven for Programmers</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">iCoder</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+        
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Topics
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Technology</a></li>
+                  <li><a class="dropdown-item" href="#">Web Development</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Support</a></li>
+                  <li><a class="dropdown-item" href="#">Write For Us</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link disabled"></a>
+              </li> -->
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+            <div class="mx-2">
+              <button class="btn btn-danger" data-toggle="modal" data-target="#loginModal">Login</button>
+              <button class="btn btn-danger" data-toggle="modal" data-target="#signupModal">SignUp</button>
+          </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Login Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login to iCoder</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Get an iCoder Account</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="form-group">
+                  <label for="cexampleInputPassword1">Confirm Password</label>
+                  <input type="password" class="form-control" id="cexampleInputPassword1">
+                </div>
+                 
+                <button type="submit" class="btn btn-primary my-2">Creat Account</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> 
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="container my-4">
+    <h1>Artificial Intelligence Explained in 5 minutes | What is Artificial Intelligence | AI Explained</h1><hr>
+    <u><h2>What is Artificial Intelligence</h2></u>
+    <img src="ai.jpg" alt="">
+    Organize your cupboard just as you like it or serve every member of the house a customized cup of coffee makes your day easier doesn't it these are the products of artificial intelligence but why use the term artificial intelligence well these machines are artificially incorporated with human-like intelligence to perform tasks as we do this intelligence is built using complex algorithms and mathematical functions but AI may not be as obvious as in the previous examples in fact AI is used in smartphones cars social media feeds video games banking surveillance and many other aspects of our daily life the real question is what does an AI do at its core here is a robot we built in our lab which is now dropped onto a field in spite of a variation in lighting landscape and dimensions of the field the AI robot must perform as expected this ability to react appropriately to a new situation is called generalized learning the robot is now at a crossroad one that is paved in the other rocky the robot must determine which path to take based on the circumstances this portrays the robots reasoning ability after a short stroll the robot now encounters a stream that it cannot swim across using the plank provided as an input the robot is able to cross this stream so our robot uses the given input and finds the solution for a problem this is problem solving these three capabilities make the robot artificially intelligent in short AI provides machines with the capability to adapt reason and provide solutions well now that we know what a is let's have a look at the two broad categories in AI is classified into weak AI also called narrow AI focuses solely on one task for example alphago is a maestro of the game go but you can't expect it to be even remotely good at this makes alphago a weak AI you might say Alexa is definitely not a weak AI since it can perform multiple tasks well that's not really true when you ask Alexa to play this besito it picks up the key words play and dispose IDO and runs a program and is trained - Alexa cannot respond to a question it isn't trained to answer for instance try asking Alexa the status of traffic from work to home Alexa cannot provide you this information as she is not trained - and that brings us to our second category of AI strong AI now this is much like the robots that only exist in fiction as of now Ultron from Avengers is an ideal example of a strong AI that's because it's self-aware and eventually even develops emotions this makes the a eyes response
+
+Difference between Artificial intelligence, Machine Learning, and Deep Learning
+
+unpredictable you must be wondering well how is artificial intelligence different from machine learning and deep learning we saw what a is machine learning is a technique to achieve AI and deep learning in turn is a subset of machine learning machine learning provides a machine with the capability to learn from data and experience throughout rhythms deep learning does this learning through ways inspired by the human brain this means through deep learning data and patterns can be better perceived Ray Kurzweil a well known futurist predicts that by the Year 2045 we would have robots as smart as humans this is called the point of singularity well that's not all in fact Elon Musk predicts that the human mind and body will be enhanced by AI implants which would make us partly cyborgs
+
+
+</div>
+      <footer class="container d-flex">
+        <p>© 2020-2021 iCoder, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p class="float-right"><a href="#">Back to top</a></p>
+      </footer>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+   
+</body>
+
+</html>
